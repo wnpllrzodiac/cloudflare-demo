@@ -32,8 +32,12 @@ npx wrangler deploy
 ```
 https://cloudflare-demo.xxxxxx.workers.dev/api/comments
 ```
+## 获取特定昵称的评论
+```
+https://cloudflare-demo.xxxxxx.workers.dev/api/comment?nickName=mgl
+```
 
-## fdf
+## 添加评论
 ```
 curl -X POST -d '{"content":"quick test","nickname":"mgl"}'  https://cloudflare-demo.xxxxxx.workers.dev/api/comment/add
 ```
