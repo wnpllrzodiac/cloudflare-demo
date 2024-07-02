@@ -22,7 +22,10 @@ npx wrangler d1 execute demo_db --local --command='SELECT * FROM Comments'
 npx wrangler dev --local --persist
 
 # 部署，去掉 local
-wrangler d1 execute demo_db --file=./schema.sql
+npx wrangler d1 execute demo_db --file=./schema.sql
+# 同步到远端数据库
+npx wrangler d1 execute demo_db --remote --file=./schema.sql
+
 npx wrangler deploy
 ```
-
+https://cloudflare-demo.xxxxxx.workers.dev/api/comments
