@@ -28,4 +28,12 @@ npx wrangler d1 execute demo_db --remote --file=./schema.sql
 
 npx wrangler deploy
 ```
+## 获取所有评论
+```
 https://cloudflare-demo.xxxxxx.workers.dev/api/comments
+```
+
+## fdf
+```
+curl -X POST -d '{"content":"quick test","nickname":"mgl"}'  https://cloudflare-demo.xxxxxx.workers.dev/api/comment/add
+```
